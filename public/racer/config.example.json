@@ -1,0 +1,43 @@
+{
+  "base_url": "https://prenotami.esteri.it",
+
+  "email": "you@example.com",
+  "password": "your-password-here",
+  "skip_login": false,
+  "login_assist_s": 420,
+
+  "service_match": "legaliz|legalizz|d\\.o\\.v|legalis",
+  "service_url": "",
+  "selects": [
+    { "match": "", "pick": "first" },
+    { "match": "tunisi", "pick": "option_re:tunisi" }
+  ],
+  "passport_number": "AB1234567",
+
+  "drop": { "time": "00:00", "timezone": "Europe/Rome", "start_early_s": 0.0 },
+
+  "strategy": {
+    "submit": "at_drop",
+    "early_lead_s": 25.0,
+    "race_window_s": 120.0,
+    "poll_ms": 200,
+    "hot_poll_ms": 16,
+    "hot_window_s": 40.0,
+    "reload_if_empty_s": 1.5,
+    "reload_hot_s": 0.4,
+    "burst_s": 6.0,
+    "advance_poll_ms": 16
+  },
+
+  "captcha": { "wait_s": 900.0 },
+  "captcha_open_s": 150.0,
+  "warmup_lead_s": 480.0,
+  "keepalive_s": 12,
+  "block_assets": true,
+  "clock": { "apply_server_skew": true, "samples": 7 },
+
+  "browser": { "headless": false, "profile_dir": "./profile", "nav_timeout_s": 45.0 },
+  "screenshots_dir": "./shots",
+  "keep_open_s": 60,
+  "on_success": ""
+}
