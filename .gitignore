@@ -1,0 +1,16 @@
+node_modules/
+dist/
+.tanstack/
+.vercel/
+*.log
+.env
+.env.*
+!.env.example
+.DS_Store
+# build / workspace internals, never published
+.grok/
+.project_id
+screenshots/
+artifacts/
+attachments/
+*.zip
